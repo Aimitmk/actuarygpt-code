@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "treatyType": "Catastrophe Excess of Loss Reinsurance",
+        "insured": "MNO Insurance Company",
+        "reinsurer": "UVW Reinsurance Company",
+        "period": {
+            "start": "2023-09-01T00:01:00",
+            "end": "2024-08-31T00:01:00"
+        },
+        "lossLayers": [
+            {
+                "layer": 1,
+                "excessOf": 5000000,
+                "limit": 2500000,
+                "reinsuredPercent": 100
+            },
+            {
+                "layer": 2,
+                "excessOf": 7500000,
+                "limit": 5000000,
+                "reinsuredPercent": 90
+            },
+            {
+                "layer": 3,
+                "excessOf": 12500000,
+                "limit": 7500000,
+                "reinsuredPercent": 80
+            },
+            {
+                "layer": 4,
+                "excessOf": 20000000,
+                "limit": 10000000,
+                "reinsuredPercent": 70
+            },
+            {
+                "layer": 5,
+                "excessOf": 30000000,
+                "limit": 12500000,
+                "reinsuredPercent": 60
+            },
+            {
+                "layer": 6,
+                "excessOf": 42500000,
+                "limit": 15000000,
+                "reinsuredPercent": 50
+            }
+        ],
+        "interest": "Covers all lines of business of the Insured including Property, Liability, and Engineering.",
+        "sumInsured": 35000000,
+        "commission": {
+            "percent": 15,
+            "maxLossRatio": 65
+        },
+        "exclusions": [
+            "Tornado risks",
+            "product liability",
+            "loss of profits",
+            "natural resource depletion"
+        ],
+        "claimsNotification": 45,
+        "arbitrationClause": "Any dispute arising from this contract shall be settled by arbitration in accordance with the rules of the Singapore International Arbitration Centre.",
+        "currency": "SGD"
+    },
+    "required": [
+        "treatyType",
+        "insured",
+        "reinsurer",
+        "period",
+        "lossLayers",
+        "interest",
+        "sumInsured",
+        "commission",
+        "exclusions",
+        "claimsNotification",
+        "arbitrationClause",
+        "currency"
+    ]
+}
